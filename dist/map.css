@@ -1,0 +1,50 @@
+#map {
+    width: 40vw;
+    height: 40vh;
+}
+.map-view .icon {
+    height: 30px;
+    width: 30px;
+}
+.map-view .tt-icon.-finish {
+    height: 16px;
+    width: 16px;
+}
+.map-view .icon-spacing {
+    margin-right: 14px;
+    margin-top: 24px;
+}
+.summary-header {
+    border-bottom: 1px solid #f2f2f2;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 24px;
+}
+.summary-details-top {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 24px 24px 0;
+}
+.summary-details-bottom {
+    display: flex;
+}
+.summary-icon-wrapper {
+    padding: 24px;
+    width: 98px;
+}
+.summary-details-text {
+    padding: 24px 24px 24px 0;
+    width: calc(100% - 98px);
+}
+.summary-details-info {
+    display: block;
+    font-size: 12px;
+    margin-top: 5px;
+}
+.summary-details-info.-second {
+    margin-top: 10px;
+}
+.tt-icon.-car {
+    height: 50px !important;
+    width: 50px !important;
+}

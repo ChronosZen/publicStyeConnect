@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StyleConnect</title>
+    <link rel="stylesheet" href="prosProfile.css">
+    <link rel="icon" type="image/x-icon" href="/img/favicon 1.png">
+    <script src="https://kit.fontawesome.com/c8c6d1441b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="pe-5 ps-5 pt-4 pb-4">
+        <nav class="navbar navbar-expand-sm flex-row flex-md-nowrap flex-wrap p-0 mt-3 mb-3">
+            <a href="./index.html" class="navbar-brand d-none d-lg-block p-0"><img
+                    src="/img/main_logo transparent_bg nav bar.png" alt=""></a>
+            <a href="./index.html" class="navbar-brand d-block d-lg-none p-0"><img src="/img/logo_mobile.png"
+                    alt=""></a>
+            <button class="navbar-toggler border-0" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav"
+                aria-label="Expand Navigation">
+                <div class="navbar-toggler-icon"></div>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="nav">
+                <ul class="navbar-nav fw-semibold justify-content-between align-items-center pt-3 pt-sm-0">
+
+                    <li class="nav-item flex-xl-grow-1 text-center dropdown">
+                        <a class="nav-link dropdown-toggle p-0" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Pros Menu
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item dropdown-item flex-xl-grow-1 text-center"><a href="./prosBooking.html"
+                                    class="nav-link p-0 fw-semibold text-nowrap" aria-current="page">Manage Booking</a>
+                            </li>
+                            <li class="nav-item dropdown-item flex-xl-grow-1 text-center"><a href="./prosProfile.html"
+                                    class="nav-link p-0 fw-semibold text-nowrap" aria-current="page">Profile</a></li>
+                                    <li class="nav-item dropdown-item flex-xl-grow-1 text-center"><a href="./prosGallery.html"
+                                        class="nav-link p-0 fw-semibold text-nowrap" aria-current="page">Gallery</a></li>
+                            <li class="nav-item dropdown-item flex-xl-grow-1 text-center"><a href="./prosDashboard.html"
+                                    class="nav-link p-0 fw-semibold text-nowrap" aria-current="page">List
+                                    Services</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item flex-xl-grow-1 text-center"><a href="./services.html"
+                            class="nav-link p-0 fw-semibold text-accent-d">Services</a></li>
+                    <li class="nav-item flex-xl-grow-1 text-center"><a href="./customerDashboard.html"
+                            class="nav-link p-0 fw-semibold">Schedule</a></li>
+                    <div
+                        class="profile-nav-bar d-flex flex-column-reverse align-items-center flex-sm-row flex-xl-grow-1 ps-sm-3 pe-sm-3 ">
+                        <li id="login1" class="nav-item visually-hidden">
+                            <a href="./customerRegister.html"
+                                class="nav-link m-0 p-2 me-sm-3 bg-contrast-d text-brightness-l fw-semibold rounded-2">Profile</a>
+                        </li>
+                        <li id="login2" class="nav-item visually-hidden">
+                            <a href="./customerRegister.html" class="nav-link m-0 p-0 ">
+                                <img src="" class="img-profile m-auto object-fit-cover" alt=""  id="profile-img">
+                            </a>
+                        </li>
+                        <li id="login3" class="nav-item login">
+                            <a href="./login.html"
+                                class="nav-link nav-link m-0 p-2 me-sm-3 bg-contrast-d text-brightness-l fw-semibold rounded-2">Log
+                                in</a>
+                        </li>
+                        <li id="login4" class="nav-item flex-xl text-center">
+                            <a href="./login.html" class="nav-link p-0 fw-semibold">Register</a>
+                        </li>
+                    </div>
+
+                </ul>
+            </div>
+
+        </nav>
+        <div id="snackbar"></div>
+    </header>
+    <main>
+        <section class="product-review container-xl  p-5 pt-0">
+            <h2 class="display-3 fw-semibold">Our services</h2>
+            <p>Discover a World of Beauty and Wellness Experiences Tailored Just for You.</p>
+
+
+        </section>
+      
+
+        <div class="full-width-with-margin-right mt-5 p-5 bg-contrast-d mb-5">
+            <form class="filter search-form ps-lg-5 ms-lg-5 flex-column flex-lg-row align-items-stretch">
+                <div class="search-wrapper2 row g-3 align-items-lg-end">
+                    <div class="col-12 col-lg-4">
+                        <label for="location" class="form-label text-brightness-l">Location:</label>
+                        <select class="form-select" name="location" id="location" required>
+                            <option value="" disabled selected>Location</option>
+                            <option value="downtown">Down Town</option>
+                            <option value="burnaby">Burnaby</option>
+                            <option value="richmond">Richmond</option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <label for="categories" class="form-label text-brightness-l">Categories:</label>
+                        <select class="form-select" name="categories" id="categories" required>
+                            <option value="" disabled selected>Category</option>
+                            <option value="Haircut">Hair Care</option>
+                            <option value="Eyelash">Eyelash Eyebrow</option>
+                            <option value="Massage">Massage</option>
+                            <option value="Nail">Nail</option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <label for="rating" class="form-label text-brightness-l">Rating:</label>
+                        <select class="form-select" name="rating" id="rating" required>
+                            <option value="" disabled selected>Rating</option>
+                            <option value="0">No rating</option>
+                            <option value="1">1 and above</option>
+                            <option value="2">2 and above</option>
+                            <option value="3">3 and above</option>
+                            <option value="4">4 and above</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                       
+                </div>
+                <button class="rounded-2 bg-accent-d text-brightness-l pe-3 ps-3 mt-3 ms-0 ms-lg-auto me-0" id="search-btn">Search</button>
+            </form>
+        </div>
+        
+        <div class="container-xl p-5">
+            <h2 id="search-header"></h2>
+            <div class="services" id="search-result">
+            </div>
+        </div>
+        <div class="container-fluid p-5 mt-5 mb-5 bg-light-purple">
+            <section class="become-pro container-xl">
+                <div class="row justify-content-between align-items-center p-0 p-md-5">
+                    <div class="col-lg-6 pe-5">
+                        <img class="rounded-topright w-100 d-none d-lg-block" src="/img/becomepro.png"
+                            alt="https://unsplash.com/photos/CsMcfJjCjog">
+                    </div>
+                    <div class="pro-detail col-lg-6 p-0">
+                        <h4 class="fw-bold mb-4">Are you a professional looking to provide your services ?</h4>
+                        <p class="w-100 mb-4">Are you a beauty and wellness expert? Join StyleConnect! We connect you to
+                            a
+                            wide range of customers, giving you the freedom to manage your schedule and bookings. Sign
+                            up
+                            today and let's transform beauty and wellness services together.</p>
+                        <a href="./prosProfile.html"
+                            class="pe-3 ps-3 pt-2 pb-2 text-decoration-none bg-accent-d text-brightness-l rounded-1">List
+                            a
+                            service</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+    </main>
+    <footer class=" p-5">
+        <div class="footer-wrapper container-xl p-0 p-md-5">
+            <div class="footer-menu1">
+                <div class="logo">
+                    <img src="/img/black_logo.png" alt="">
+                </div>
+                <p class="mt-3 mb-3">Convenient on-demand beauty and wellness services delivered to your doorstep,
+                    transforming your self-care routine.</p>
+                <nav class="social">
+                    <ul class="p-0">
+                        <li><a href=""><i class="fa-brands fa-facebook"><span
+                                        class="visually-hidden">facebook</span></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-twitter"><span
+                                        class="visually-hidden">twitter</span></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-instagram"><span
+                                        class="visually-hidden">instagram</span></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-menu2">
+                <nav class="about">
+                    <h5>About</h5>
+                    <ul class="p-0">
+                        <li><a href="">How it Works</a></li>
+                        <li><a href="">Best Professional</a></li>
+                        <li><a href="">FAQ's</a></li>
+                        <li><a href="">About Us</a></li>
+                    </ul>
+                </nav>
+                <nav class="pages">
+                    <h5 class="text-nowrap">Pros Links</h5>
+                    <ul class="p-0">
+                        <li><a href="./prosProfile.html">Profile</a></li>
+                        <li><a href="./prosDashboard.html">Dashboard</a></li>
+                        <li><a href="./prosBooking.html">Manage Booking</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-menu3 p-0 p-md-5">
+                <div class="copy-rights1">
+                    <p>©2023 StyleConnect. All rights reserved</p>
+                </div>
+                <div class="copy-rights2">
+                    <p><a href="#">Privacy & Policy</a></p>
+                    <p><a href="#">Terms & Condition</a></p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="./filterServices.bundle.js" defer></script>
+    <script src="./bootstrap.bundle.js" defer></script>
+</body>
+
+</html>

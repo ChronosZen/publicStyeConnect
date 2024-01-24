@@ -1,0 +1,62 @@
+
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+    color: $contrast-d;
+}
+
+input {
+    width: 100%;
+    padding: 0.7em;
+    border: 1px solid $brightness-d;
+    border-radius: 3px;
+    margin-bottom: 1em;
+    font-size: 0.8em;
+}
+
+input[type="checkbox"], select{
+    width: auto;
+}
+
+
+button:hover {
+    background-color: $accent-d;
+}
+.checkbox-wrapper {
+    :first-child{
+        flex-basis:100%;
+    }
+    @include flex-display(0, row, wrap);
+    align-items: center;
+}
+
+
+input:disabled, select:disabled, textarea:disabled, button:disabled {
+    background: #d6d6d6;  /* change this color as per your preference */
+    color: $contrast-d
+}
+
+.filter{
+    @include flex-display(1rem, row, nowrap);
+    align-items: end;
+    gap:3rem;
+}
+.full-width-with-margin-right{
+    @media screen and (min-width: 996px) {
+        width: calc(100% - 11rem);
+        margin-right: 11rem;
+        border-top-right-radius: 4rem;
+    }
+
+}
+
+
+#search-btn{
+    border: none;
+    cursor: pointer;
+    font-size: 0.8em;
+    padding: 0.5rem 1em;
+    flex-basis: 15%;
+    margin: 0 auto;
+}

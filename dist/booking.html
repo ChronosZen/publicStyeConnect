@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StyleConnect</title>
+    <link rel="stylesheet" href="prosProfile.css">
+    <link rel="icon" type="image/x-icon" href="/img/favicon 1.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"
+        defer></script>
+    <script src="https://kit.fontawesome.com/c8c6d1441b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="pe-5 ps-5 pt-4 pb-4">
+        <nav class="navbar navbar-expand-sm flex-row flex-md-nowrap flex-wrap p-0 mt-3 mb-3">
+            <a href="./index.html" class="navbar-brand d-none d-lg-block p-0"><img
+                    src="/img/main_logo transparent_bg nav bar.png" alt=""></a>
+            <a href="./index.html" class="navbar-brand d-block d-lg-none p-0"><img src="/img/logo_mobile.png"
+                    alt=""></a>
+            <button class="navbar-toggler border-0" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav"
+                aria-label="Expand Navigation">
+                <div class="navbar-toggler-icon"></div>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="nav">
+                <ul class="navbar-nav fw-semibold justify-content-between align-items-center pt-3 pt-sm-0">
+
+                    <li class="nav-item flex-xl-grow-1 text-center dropdown">
+                        <a class="nav-link dropdown-toggle p-0" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Pros Menu
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item dropdown-item flex-xl-grow-1 text-center"><a href="./prosBooking.html"
+                                    class="nav-link p-0 fw-semibold text-nowrap" aria-current="page">Manage Booking</a>
+                            </li>
+                            <li class="nav-item dropdown-item flex-xl-grow-1 text-center"><a href="./prosProfile.html"
+                                    class="nav-link p-0 fw-semibold text-nowrap" aria-current="page">Profile</a></li>
+                                    <li class="nav-item dropdown-item flex-xl-grow-1 text-center"><a href="./prosGallery.html"
+                                        class="nav-link p-0 fw-semibold text-nowrap" aria-current="page">Gallery</a></li>
+                            <li class="nav-item dropdown-item flex-xl-grow-1 text-center"><a href="./prosDashboard.html"
+                                    class="nav-link p-0 fw-semibold text-nowrap" aria-current="page">List
+                                    Services</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item flex-xl-grow-1 text-center"><a href="./services.html"
+                            class="nav-link p-0 fw-semibold text-accent-d">Services</a></li>
+                    <li class="nav-item flex-xl-grow-1 text-center"><a href="./customerDashboard.html"
+                            class="nav-link p-0 fw-semibold">Schedule</a></li>
+                    <div
+                        class="profile-nav-bar d-flex flex-column-reverse align-items-center flex-sm-row flex-xl-grow-1 ps-sm-3 pe-sm-3 ">
+                        <li id="login1" class="nav-item visually-hidden">
+                            <a href="./customerRegister.html"
+                                class="nav-link m-0 p-2 me-sm-3 bg-contrast-d text-brightness-l fw-semibold rounded-2">Profile</a>
+                        </li>
+                        <li id="login2" class="nav-item visually-hidden">
+                            <a href="./customerRegister.html" class="nav-link m-0 p-0 ">
+                                <img src="" class="img-profile m-auto object-fit-cover" alt="" id="profile-img">
+                            </a>
+                        </li>
+                        <li id="login3" class="nav-item login">
+                            <a href="./login.html"
+                                class="nav-link nav-link m-0 p-2 me-sm-3 bg-contrast-d text-brightness-l fw-semibold rounded-2">Log
+                                in</a>
+                        </li>
+                        <li id="login4" class="nav-item flex-xl text-center">
+                            <a href="./login.html" class="nav-link p-0 fw-semibold">Register</a>
+                        </li>
+                    </div>
+
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+    <div class="container-fluid d-md-none p-0">
+        <hr class="m-0 mb-5 p-0">
+    </div>
+    <main>
+        <!-- show the tab -->
+        <nav class="navbar d-none d-md-block align-items-center" aria-label="breadcrumb">
+            <div class="container ps-0">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item "><a href="./index.html"><i
+                                class="fa-regular fa-calendar text-light-emphasis text-opacity-50"></i></a></li>
+                    <li class="breadcrumb-item"><a
+                            class="text-light-emphasis active text-decoration-none text-opacity-50"
+                            href="./services.html">Service</a></li>
+                    <li class="breadcrumb-item active text-contrast-d" aria-current="page">Service by Professionals</li>
+                </ol>
+            </div>
+        </nav>
+
+        <!-- img and booking form   -->
+        <div class="container d-md-flex justify-content-around p-md-0">
+            <div class="row d-flex row-cols-1 row-cols-md-2">
+                <div class="col p-md-4 pe-md-4 pt-md-0 ps-md-0 mb-4 ">
+                    <div id="carouselExample" class="carousel slide">
+                        <div class="carousel-inner">
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                      <!-- Commented out current dummy featured-image -->
+                    <!-- <img class="img-fluid rounded rounded-top-circle rounded-start-1"
+                        src="/img/rendy-novantino-CsMcfJjCjog-unsplash.jpg" alt="featured-image"> -->
+                </div>
+                <div class="col flex-grow-1 p-md-0">
+                    <section class="container pb-0 pt-4 pt-md-0" id="booking-detail">
+                        <div class="col d-flex justify-content-between align-items-start">
+                            <h3 class="fs-2 fw-bold pb-3 mb-0" id="fullname"></h3>
+                            <div class="d-flex gap-3">
+                                <p class="text-gold bg-l-gold bg-opacity-25 p-2 pt-1 pb-1  mb-0" id="rating"><i
+                                        class="fa-regular fa-star"></i> </p>
+                                <a class="bg-primary bg-opacity-25 p-2 pt-1 pb-1 mt-0" id="review-link"><i
+                                        class="fa-regular fa-message"></i> <span class="fs-6"
+                                        id="ratingCount"></span></a>
+                            </div>
+                        </div>
+                        <p class="mt-3" id="address"></p>
+                    </section>
+
+
+                    <div class="container-fluid p-0">
+                        <hr class="m-0 p-0 mt-3 mb-3 mt-lg-4 mb-lg-4">
+                    </div>
+
+                    <!-- Price section -->
+                    <form id="booking-listing">
+                        <h3>Service</h3>
+                    </form>
+
+                    <div class="container-fluid p-0">
+                        <hr class="m-0 p-0 mt-2 mb-3 mt-lg-4 mb-lg-4">
+                    </div>
+
+                    <!-- bio section -->
+                    <div>
+                        <p class="" id="bio"></p>
+                    </div>
+
+                    <div class="container-fluid p-0">
+                        <hr class="m-0 p-0 mt-3 mb-3 mt-lg-4 mb-lg-4">
+                    </div>
+
+                    <!-- location select drop down -->
+                    <form action="" id="location-select" class="container d-sm-flex d-md-block d-lg-flex justify-content-between align-items-center ps-0">
+                        <label for="">Select service location</label>
+                    </form>
+
+                    <div class="container-fluid p-0">
+                        <hr class="m-0 p-0 mt-3 mb-3 mt-lg- mb-lg-4">
+                    </div>
+
+                    <style>
+                        #book-service:hover {
+                            background-color: #6E6E74 !important;
+                        }
+                    </style>
+
+                    <!-- submit button -->
+                    <a href=""
+                        class="fs-5 btn d-block bg-contrast-d text-brightness-l btn-show btn-animated mt-5 mb-5 text-capitalize hover-link"
+                        id="book-service" alt="Booking confirmation button">Schedule
+                        Booking</a>
+
+                    <!-- modal -->
+                    <section>
+                        <div class="row col">
+                            <div id="reviewModal" class="modal">
+                                <div class="modal-content">
+                                    <span class="close">&times;</span>
+                                    <p>Review</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+    <footer class=" p-5">
+        <div class="footer-wrapper container-xl p-0 p-md-5">
+            <div class="footer-menu1">
+                <div class="logo">
+                    <img src="/img/black_logo.png" alt="">
+                </div>
+                <p class="mt-3 mb-3">Convenient on-demand beauty and wellness services delivered to your doorstep,
+                    transforming your self-care routine.</p>
+                <nav class="social">
+                    <ul class="p-0">
+                        <li><a href=""><i class="fa-brands fa-facebook"><span
+                                        class="visually-hidden">facebook</span></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-twitter"><span
+                                        class="visually-hidden">twitter</span></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-instagram"><span
+                                        class="visually-hidden">instagram</span></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-menu2">
+                <nav class="about">
+                    <h5>About</h5>
+                    <ul class="p-0">
+                        <li><a href="">How it Works</a></li>
+                        <li><a href="">Best Professional</a></li>
+                        <li><a href="">FAQ's</a></li>
+                        <li><a href="">About Us</a></li>
+                    </ul>
+                </nav>
+                <nav class="pages">
+                    <h5 class="text-nowrap">Pros Links</h5>
+                    <ul class="p-0">
+                        <li><a href="./prosProfile.html">Profile</a></li>
+                        <li><a href="./prosDashboard.html">Dashboard</a></li>
+                        <li><a href="./prosBooking.html">Manage Booking</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-menu3 p-0 p-md-5">
+                <div class="copy-rights1">
+                    <p>©2023 StyleConnect. All rights reserved</p>
+                </div>
+                <div class="copy-rights2">
+                    <p><a href="#">Privacy & Policy</a></p>
+                    <p><a href="#">Terms & Condition</a></p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <script src="./booking.bundle.js" defer></script>
+    <script src="./bootstrap.bundle.js" defer></script>
+</body>
+
+</html>

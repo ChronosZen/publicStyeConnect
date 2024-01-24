@@ -1,0 +1,61 @@
+@import 'form';
+@import 'button';
+@import 'listingtab';
+@import 'toast';
+@import 'rating';
+@import 'reviewmodal';
+
+.progress-bar{
+    background: linear-gradient(135deg, #5B24C6, #8949E1, #B971FF);
+}
+.price-tag {
+    min-width: 90px;
+}
+#add-service{
+    cursor: pointer;
+}
+
+
+.tabContent > .booking-history-customer {
+    display: none;
+}
+.active > .booking-history-customer {
+    display: block;
+}
+.tab-active{
+    background-color: $accent-d;
+    color: $brightness-l;
+}
+.date-wrapper{
+    height:100%;
+}
+
+.tab-cursor{
+    cursor: pointer;
+}
+.date-wrapper{
+    width:100%;
+    @media screen and (min-width: 996px) {
+        width:initial;
+    }
+}
+.img-booking{
+    width: auto;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.textarea{
+    height: 10rem;
+}
+#gallery-after-upload{
+    gap:1rem;
+}
+.img-gallery-button{
+    flex-grow: 1 !important;
+    width: calc(50% - 1rem) !important;
+    @media screen and (min-width: 996px) {
+        width: 30% !important;
+    }
+
+}

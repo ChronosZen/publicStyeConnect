@@ -1,0 +1,30 @@
+/* 
+Theme: Hotpink Rubber Chicken
+Author: Krisana Arunyamitanon
+Author Url: https://google.com
+Description: this is a WordPress theme to learn about theming and sass
+Version: .1
+*/
+
+
+// @import 'vendors/reset';
+$primary: #8949E1;
+@import "abstracts/abstracts";
+@import "vendors/reset";
+@import "base/base";
+@import "utilities/utilities";
+@import "component/component";
+
+@import "layouts/main-content.scss";
+@import "layouts/header.scss";
+@import "layouts/footer.scss";
+
+
+// Include any default variable overrides here (though functions won't be available)
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+// Then add additional custom code here
+
+// Override the navbar toggler breakpoint

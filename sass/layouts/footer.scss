@@ -1,0 +1,90 @@
+footer {
+    .footer-wrapper {
+      @include flex-display(2rem, column, nowrap);
+    }
+  
+    a {
+      text-decoration: none;
+    }
+  
+    h5 {
+      margin-bottom: 1rem;
+    }
+  
+    .footer-menu2 {
+      @include flex-display(0rem);
+      justify-content: space-between;
+    }
+  
+    ul {
+      @include flex-display(1rem, column, nowrap);
+    }
+  
+    .footer-menu3 {
+      border-top: 1px solid $brightness-d;
+      padding-top: 1rem;
+      p {
+        margin: 0;
+      }
+      @include flex-display(0.5rem, column, nowrap);
+      .copy-rights2 {
+        @include flex-display(0.5rem, row, nowrap);
+        justify-content: space-between;
+        a {
+          color: $brightness-d;
+        }
+      }
+      .copy-rights1 {
+        order: 2;
+      }
+    }
+  
+    @media screen and (min-width: 1200px) {
+        ul {
+            @include flex-display(2rem, column, nowrap);
+          }
+          h5 {
+            margin-bottom: 2rem;
+          }
+          .copy-rights2{
+            flex-basis:25%;
+          }
+      .footer-menu1 {
+        flex-basis: 45%;
+        justify-content: space-evenly;
+      }
+  
+      .footer-menu2 {
+        flex-basis: 45%;
+        justify-content: space-evenly;
+      }
+  
+      .footer-menu3 {
+        flex-flow: row;
+        flex-basis: 100%;
+        justify-content: space-between;
+        .copy-rights1 {
+          order:inherit;
+
+        }
+      }
+  
+      .footer-wrapper {
+        @include flex-display(1rem, row, wrap);
+        justify-content: space-between;
+        margin: auto;
+      }
+    }
+  }
+  
+  footer .social ul {
+    @include flex-display(1rem, row, nowrap);
+  }
+  
+  footer{
+    @include bg-gradient(left, $contrast-d, $contrast-d, $contrast-d);
+    color:  $brightness-l;
+    a{
+        color: $brightness-l;
+    }
+}

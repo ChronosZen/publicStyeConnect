@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StyleConnect</title>
+    <link rel="stylesheet" href="prosProfile.css">
+    <link rel="icon" type="image/x-icon" href="/img/favicon 1.png">
+    <!-- TOMTOM -->
+    <link rel="stylesheet" type="text/css"
+        href="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.18.0/maps/maps.css" />
+    <link rel='stylesheet' type='text/css' href='https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.23.0/maps/maps.css'>
+    <link rel='stylesheet' type='text/css'
+        href='https://api.tomtom.com/maps-sdk-for-web/cdn/plugins/SearchBox/3.2.0//SearchBox.css' />
+    <link rel='stylesheet' type='text/css' href='./assets/ui-library/icons-css/routing.css' />
+    <link rel='stylesheet' type='text/css' href='./assets/ui-library/index.css' />
+    <link rel="stylesheet" href="./map.css">
+    <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.18.0/maps/maps-web.min.js"></script>
+    <script src='https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.23.0/maps/maps-web.min.js'></script>
+    <script src='https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.23.0/services/services-web.min.js'></script>
+    <!-- <script type='text/javascript' src='../assets/js/search/searchbox-enter-submit.js'></script> -->
+    <!-- <script src='https://api.tomtom.com/maps-sdk-for-web/cdn/plugins/SearchBox/3.2.0//SearchBox-web.js'></script> -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js'></script>
+
+    <script src="https://kit.fontawesome.com/c8c6d1441b.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    .icon {
+        background-size: cover;
+        height: 30px;
+        width: 30px;
+    }
+
+    .route-marker {
+        align-items: center;
+        background-color: #4a90e2;
+        border: solid 3px #2faaff;
+        border-radius: 50%;
+        display: flex;
+        height: 32px;
+        justify-content: center;
+        transition: width .1s, height .1s;
+        width: 32px;
+    }
+
+    .route-marker-end {
+        align-items: center;
+        background-color: rgb(245, 107, 107);
+        border: solid 3px #ff0000;
+        border-radius: 50%;
+        display: flex;
+        height: 32px;
+        justify-content: center;
+        transition: width .1s, height .1s;
+        width: 32px;
+    }
+</style>
+
+<body>
+    <header class="pe-5 ps-5 pt-4 pb-4">
+        <nav class="navbar navbar-expand-sm flex-row flex-md-nowrap flex-wrap p-0 mt-3 mb-3">
+            <a href="./index.html" class="navbar-brand d-none d-lg-block p-0"><img
+                    src="/img/main_logo transparent_bg nav bar.png" alt=""></a>
+            <a href="./index.html" class="navbar-brand d-block d-lg-none p-0"><img src="/img/logo_mobile.png"
+                    alt=""></a>
+            <button class="navbar-toggler border-0" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav"
+                aria-label="Expand Navigation">
+                <div class="navbar-toggler-icon"></div>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="nav">
+                <ul class="navbar-nav fw-semibold justify-content-between align-items-center pt-3 pt-sm-0">
+
+                    <li class="nav-item flex-xl-grow-1 text-center dropdown">
+                        <a class="nav-link dropdown-toggle p-0 text-accent-d" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Pros Menu
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item dropdown-item flex-xl-grow-1 text-center"><a href="./prosBooking.html"
+                                    class="nav-link p-0 fw-semibold text-nowrap" aria-current="page">Manage Booking</a>
+                            </li>
+                            <li class="nav-item dropdown-item flex-xl-grow-1 text-center"><a href="./prosProfile.html"
+                                    class="nav-link p-0 fw-semibold text-nowrap" aria-current="page">Profile</a></li>
+                                    <li class="nav-item dropdown-item flex-xl-grow-1 text-center"><a href="./prosGallery.html"
+                                        class="nav-link p-0 fw-semibold text-nowrap" aria-current="page">Gallery</a></li>
+                            <li class="nav-item dropdown-item flex-xl-grow-1 text-center"><a href="./prosDashboard.html"
+                                    class="nav-link p-0 fw-semibold text-nowrap" aria-current="page">List
+                                    Services</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item flex-xl-grow-1 text-center"><a href="./services.html"
+                            class="nav-link p-0 fw-semibold">Services</a></li>
+                    <li class="nav-item flex-xl-grow-1 text-center"><a href="./customerDashboard.html"
+                            class="nav-link p-0 fw-semibold">Schedule</a></li>
+                    <div
+                        class="profile-nav-bar d-flex flex-column-reverse align-items-center flex-sm-row flex-xl-grow-1 ps-sm-3 pe-sm-3 ">
+                        <li id="login1" class="nav-item visually-hidden">
+                            <a href="./customerRegister.html"
+                                class="nav-link m-0 p-2 me-sm-3 bg-contrast-d text-brightness-l fw-semibold rounded-2">Profile</a>
+                        </li>
+                        <li id="login2" class="nav-item visually-hidden">
+                            <a href="./customerRegister.html" class="nav-link m-0 p-0 ">
+                                <img src="" class="img-profile m-auto object-fit-cover" alt=""  id="profile-img">
+                            </a>
+                        </li>
+                        <li id="login3" class="nav-item login">
+                            <a href="./login.html"
+                                class="nav-link nav-link m-0 p-2 me-sm-3 bg-contrast-d text-brightness-l fw-semibold rounded-2">Log
+                                in</a>
+                        </li>
+                        <li id="login4" class="nav-item flex-xl text-center">
+                            <a href="./login.html" class="nav-link p-0 fw-semibold">Register</a>
+                        </li>
+                    </div>
+
+                </ul>
+            </div>
+
+        </nav>
+        <div id="snackbar"></div>
+    </header>
+
+    <main>
+        <dialog id="map-dialog">
+            <div id="displayError"></div>
+            <div id="result"></div>
+            <div id="map" class='map w-100'></div>
+            <div id="distance"></div>
+            <p id="address-line"></p>
+            <button id="close-dialog" class="mb-2 me-3 rounded-2 p-3 bg-accent-l text-accent-d border-0">Close</button>
+        </dialog>
+        <section class="container-xl p-5 pb-3 pt-0">
+            <h2 class="display-3 fw-semibold spacing-header">Schedule</h2>
+            <p class="mt-3">Manage your appointments from here</p>
+        </section>
+        <div class="row container-xl m-auto ps-5 pe-5 pt-3 pb-3 tab-cursor mb-5">
+            <div class="tab-wrapper d-flex bg-brightness-d col-12 col-lg-9 p-1 rounded-2 align-items-center">
+                <div id="pendingTabButton" class="tab-button col-4 p-3 tab-active rounded-2 text-center">
+                    <p class="m-0 smalltext">Pending</p>
+                </div>
+                <div id="confirmedTabButton" class="tab-button col-4 p-3 rounded-2 text-center">
+                    <p class="m-0 smalltext">Confirmed</p>
+                </div>
+                <div id="cancelledTabButton" class="tab-button col-4 p-3 rounded-2 text-center">
+                    <p class="m-0 smalltext">Cancelled</p>
+                </div>
+            </div>
+        </div>
+
+        <section id="booking-request" class="p-0 mb-5 bg-brightness-l">
+            <div id="pendingTab" class="tabContent container-xl p-0  bg-brightness-l"></div>
+            <div id="confirmedTab" class="tabContent container-xl p-0  bg-brightness-l"></div>
+            <div id="cancelledTab" class="tabContent container-xl p-0  bg-brightness-l"></div>
+        </section>
+
+    </main>
+
+
+    <footer class=" p-5">
+        <div class="footer-wrapper container-xl p-0 p-md-5">
+            <div class="footer-menu1">
+                <div class="logo">
+                    <img src="/img/black_logo.png" alt="">
+                </div>
+                <p class="mt-3 mb-3">Convenient on-demand beauty and wellness services delivered to your doorstep,
+                    transforming your self-care routine.</p>
+                <nav class="social">
+                    <ul class="p-0">
+                        <li><a href=""><i class="fa-brands fa-facebook"><span
+                                        class="visually-hidden">facebook</span></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-twitter"><span
+                                        class="visually-hidden">twitter</span></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-instagram"><span
+                                        class="visually-hidden">instagram</span></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-menu2">
+                <nav class="about">
+                    <h5>About</h5>
+                    <ul class="p-0">
+                        <li><a href="">How it Works</a></li>
+                        <li><a href="">Best Professional</a></li>
+                        <li><a href="">FAQ's</a></li>
+                        <li><a href="">About Us</a></li>
+                    </ul>
+                </nav>
+                <nav class="pages">
+                    <h5 class="text-nowrap">Pros Links</h5>
+                    <ul class="p-0">
+                        <li><a href="./prosProfile.html">Profile</a></li>
+                        <li><a href="./prosDashboard.html">Dashboard</a></li>
+                        <li><a href="./prosBooking.html">Manage Booking</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-menu3 p-0 p-md-5">
+                <div class="copy-rights1">
+                    <p>©2023 StyleConnect. All rights reserved</p>
+                </div>
+                <div class="copy-rights2">
+                    <p><a href="#">Privacy & Policy</a></p>
+                    <p><a href="#">Terms & Condition</a></p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <script src="./prosBooking.bundle.js" defer></script>
+    <script src="./bootstrap.bundle.js" defer></script>
+</body>
+
+</html>

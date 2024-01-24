@@ -1,0 +1,55 @@
+#rating-form {
+    width: 250px;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #d9d9d9;
+  }
+  
+  #rating-form div,
+  #rating-form input[type="submit"] {
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  #star-dialog #rating-form input[type="submit"] {
+    border: 1px solid #d9d9d9;
+    background-color: #efefef;
+  }
+  
+  #rating-form input[type="radio"] {
+    display: none;
+
+  }
+  
+  #rating-form label {
+    color: grey;
+    font-size: 2rem;
+  }
+  
+  #rating-form .clasificacion {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+  }
+  
+  #rating-form label:hover,
+  #rating-form label:hover ~ label {
+    color: orange;
+    cursor: pointer;
+  }
+  
+  #rating-form input[type="radio"]:checked ~ label {
+    color: orange;
+  }
+  
+  #rating-form .clasificacion {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .star-span{
+    color: orange;
+    font-size: 2rem;
+  }
+  .service-span{
+    font-size: 1rem;
+  }

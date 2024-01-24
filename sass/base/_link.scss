@@ -1,0 +1,20 @@
+/* LINKS =============== */
+
+a{
+    text-decoration: none;
+    color: $contrast-d;
+
+
+}
+.service-active i, .service-active span{
+    color: $accent-d;
+}
+.breadcrumb .active{
+    background-color: white;
+}
+footer nav a{
+    text-align: left;
+}
+.col-12.col-md-3.border-2.border-bottom.border-contrast-l.pb-3.service-active-border{
+    border-color: $accent-d !important;
+}

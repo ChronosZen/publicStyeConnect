@@ -1,0 +1,31 @@
+
+/* The first mixin can help our team to adjust gradient base on what color and which direction they want.
+The second mixin is flex-display becasue we will use flex to style many element in this way it is really useful*/
+@mixin bg-gradient($to:right ,$first:$base-l , $second:$base-m, $third:$base-d){
+    background-image: linear-gradient(to $to, $first , $second, $third);
+}
+@mixin flex-display($g:1rem, $dir:row, $wr: nowrap){
+    display: flex;
+    gap: $g;
+    flex-flow: $dir $wr;
+}
+@mixin flex-content($c:center, $i: center){
+   display: flex;
+   justify-content: $c;
+   align-items: $i;
+}
+@mixin cornered($amt:4px){
+    border-radius: $amt;
+}
+
+@mixin rounded {
+    border-radius: 20px;
+}
+
+
+
+@mixin border($w:1px, $s:solid, $c:$accent-m){
+    border: $w $s $c;
+}
+
+

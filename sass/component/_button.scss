@@ -1,0 +1,66 @@
+/* BUTTON ============= */
+
+
+// .btn{
+//     font-size: 13px;
+//     @media screen and (min-width: 1200px){
+//         font-size: 10px;
+//     }
+
+//     &:link, &:visited{
+//         text-transform: uppercase;
+//         text-decoration: none;
+//         padding: 0.75rem;
+//         border-radius: 100px;
+//         margin: 0.75rem 0.75rem 0.75rem 0rem;
+//         text-align: center;
+//         transition: all 0.2s;
+//         position: relative;
+//     }
+//     &:hover{
+//         transform: translateY(-3px);
+//         box-shadow: 0 10px 20px rgba($contrast-d,.2);
+//     }
+//     &:active{
+//         transform: translateY(-1px);;
+//         box-shadow: 0 5px 10px rgba($contrast-d,.2);
+//     }
+//     &::after{
+//         content: "";
+//         display: inline-block;
+//         height: 100%;
+//         width: 100%;
+//         border-radius:100px;
+//         position: absolute;
+//         top: 0;
+//         left: 0;
+//         z-index: -1;
+//         transition: all 0.4s;
+//     }
+// }
+// .btn-show{
+//     background-color: $text-sub;
+//     color:$brightness-l;
+//     &::after{
+//         background-color: $text-sub;
+//     }
+//     &:hover::after{
+//         transform: scale(1.5);
+//         opacity: 0;
+//     }
+// }
+// .btn-animated{
+//     animation: moveInBottom .5s ease-out .75s;
+//     animation-fill-mode: backwards;
+// }
+// .list-service{
+//     @include border();
+// }
+
+// button:disabled{
+//     background-color: gray;
+//     cursor:initial;
+// }
+// button{
+//     margin:1rem;
+// }
